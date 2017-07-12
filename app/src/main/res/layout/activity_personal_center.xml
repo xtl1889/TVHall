@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dwb.ruyou.tvhall.ui.PersonalCenterActivity"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/personal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="个人中心"
+            android:textColor="@color/text_white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:id="@+id/personal_looked_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/already_look_tv"
+                    style="@style/person_center_text_stytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/already_look"
+                    android:nextFocusDown="@+id/subscibe_tv"
+                    android:text="  我看过的" />
+
+                <ImageView
+                    android:id="@+id/looked_title_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/select_bottom"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/personal_subscibe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_looked_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subscibe_tv"
+                    style="@style/person_center_text_stytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/subscibe"
+                    android:nextFocusDown="@+id/my_game_tv"
+                    android:nextFocusUp="@+id/already_look_tv"
+                    android:text="  我的订阅" />
+
+                <ImageView
+                    android:id="@+id/subscibe_title_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/select_bottom"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/game_subscibe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/personal_subscibe_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/my_game_tv"
+                    style="@style/person_center_text_stytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/my_game"
+                    android:nextFocusDown="@+id/play_glod_tv"
+                    android:nextFocusUp="@+id/subscibe_tv"
+                    android:text="  我的游戏" />
+
+                <ImageView
+                    android:id="@+id/game_title_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/select_bottom"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gold_subscibe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/game_subscibe_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/play_glod_tv"
+                    style="@style/person_center_text_stytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/play_glod"
+                    android:nextFocusDown="@+id/setting_tv"
+                    android:nextFocusUp="@+id/my_game_tv"
+                    android:text="  电玩币" />
+
+                <ImageView
+                    android:id="@+id/gold_title_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/select_bottom"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_subscibe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gold_subscibe_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/setting_tv"
+                    style="@style/person_center_text_stytle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/setting"
+                    android:nextFocusUp="@+id/play_glod_tv"
+                    android:text="  设置" />
+
+                <ImageView
+                    android:id="@+id/setting_title_select_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/select_bottom"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/personal_farmeLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:focusable="false"
+        />
+</LinearLayout>

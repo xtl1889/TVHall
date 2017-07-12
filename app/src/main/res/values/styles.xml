@@ -1,0 +1,88 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyStyle" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/main_background</item>
+    </style>
+
+
+    <style name="tab_layout_style">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="tab_title_style">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@drawable/tab_tile_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="game_title_style">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@drawable/tab_tile_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="tab_founction_title_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:background">@drawable/tab_tile_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="two_grade_title_style">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/tab_tile_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!--电玩币页面 不用动态设置修改的TextView-->
+    <style name="gold_text_style1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="game_detail_text_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="setting_text_style">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <style name="setting_fragment_style">
+        <item name="android:padding">25dp</item>
+        <item name="android:background">@drawable/setting_selector</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="person_center_text_stytle">
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_tile_selector</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+</resources>

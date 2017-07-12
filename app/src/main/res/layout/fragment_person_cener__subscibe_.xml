@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dwb.ruyou.tvhall.ui.fragment.PersonCener_Subscibe_Fragment">
+
+    <com.dwb.ruyou.tvhall.ui.widget.recyclerview1.TvRecyclerView
+        android:id="@+id/personalCenter_subscibe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</FrameLayout>

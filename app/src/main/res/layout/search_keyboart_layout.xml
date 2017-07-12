@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/keyboart_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_white"
+        android:drawableLeft="@drawable/search"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/text_white"
+        android:layout_below="@+id/keyboart_tv"
+        />
+    <LinearLayout
+        android:id="@+id/keyboart_function_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/keyboart_tv"
+        android:padding="15dp"
+        >
+
+        <TextView
+            android:id="@+id/keyboart_clear_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除"
+            android:textColor="@color/text_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@drawable/search_keyboart_clear_delete_selector"
+            android:clickable="true"
+            />
+        <TextView
+            android:id="@+id/keyboart_del_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/text_white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:background="@drawable/search_keyboart_clear_delete_selector"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/keyboart_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/keyboart_function_layout"
+        />
+</RelativeLayout>

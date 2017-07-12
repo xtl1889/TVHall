@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/classified_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    style="@style/tab_layout_style"
+    android:nextFocusRight="@+id/search_tv"
+    android:nextFocusLeft="@+id/game_linear"
+    >
+
+    <TextView
+        android:id="@+id/tab4_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分类"
+        style="@style/tab_title_style"
+
+        />
+
+    <ImageView
+        android:id="@+id/tab4_select_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/select_bottom"
+        android:visibility="invisible"
+        />
+</LinearLayout>

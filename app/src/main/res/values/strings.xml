@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TVHall</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="textview_no_string">暂无数据</string>
+
+    <string name="date_day">天</string>
+    <string name="date_hour">小时</string>
+    <string name="date_minute">分</string>
+    <string name="date_second">秒</string>
+
+    <string name="time_day">天前</string>
+    <string name="time_hour">小时前</string>
+    <string name="time_minute">分钟前</string>
+    <string name="time_second">刚刚</string>
+</resources>

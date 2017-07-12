@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/setting_help_left_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_left"
+        android:layout_toLeftOf="@+id/setting_help_img"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@drawable/setting_help_selector"
+        android:nextFocusRight="@+id/setting_help_right_img"
+        />
+    <ImageView
+        android:id="@+id/setting_help_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/settings1"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/setting_help_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_right"
+        android:layout_toRightOf="@+id/setting_help_img"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:background="@drawable/setting_help_selector"
+        android:nextFocusLeft="@+id/setting_help_left_img"
+        />
+
+</RelativeLayout>

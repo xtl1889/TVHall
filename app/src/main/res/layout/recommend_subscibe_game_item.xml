@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recommend_subscibe_game_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:focusable="true"
+    android:background="@drawable/item_selector"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/recommend_subscibe_game_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        fresco:actualImageResource="@drawable/recommend_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/recommend_subscibe_game_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/recommend_subscibe_game_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_white"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

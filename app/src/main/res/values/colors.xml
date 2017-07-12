@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="selectBackground">#0094DC</color>
+    <color name="selectBackground_translucent">#500094DC</color>
+    <color name="selectStroke">#4C6143</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#9E9E9E</color>
+    <color name="text_black">#000000</color>
+
+    <color name="looked_item_brackground">#50000000</color>
+
+    <color name="sure_back">#F09505</color>
+    <color name="keyboart_backg">#50ffffff</color>
+    <color name="keyboart_select_item_stroke">#F7F1B0</color>
+    <color name="keyboart_text_into">#888888</color>
+
+    <color name="game_detail_down">#E95613</color>
+
+    <color name="setting_item_brackground">#500094DC</color>
+
+    <color name="play_gold_user_brackground">#900C84C0</color>
+    <color name="play_gold1_brackground">#90B5004F</color>
+    <color name="play_gold2_brackground">#90A7A5A4</color>
+    <color name="play_gold_text1">#EEC728</color>
+
+    <color name="recommend_classied1">#A30519</color>
+    <color name="recommend_classied2">#B96D23</color>
+
+    <!--第三方引入颜色-->
+    <color name="transparent">#00ffffff</color>
+    <color name="font_blue">#ff3a95ff</color>
+    <color name="font_dark">#ff4a4a4a</color>
+</resources>

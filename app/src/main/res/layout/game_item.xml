@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_item_Layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:focusable="true"
+    android:layout_margin="10dp"
+    android:background="@drawable/item_selector"
+    >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/game_all_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        fresco:actualImageResource="@drawable/test_img2"
+        fresco:viewAspectRatio="1.33"
+        />
+    <com.dwb.ruyou.tvhall.ui.widget.GameStarView
+        android:id="@+id/game_star_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/game_all_img"
+        />
+</LinearLayout>

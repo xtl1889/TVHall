@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/search_nothing_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search_nothing" />
+
+        <TextView
+            android:id="@+id/search_nothing_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/search_nothing_img"
+            android:text="未搜索到相关内容"
+            android:textColor="@color/text_white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/search_nothing_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_nothing_tv1"
+            android:layout_toRightOf="@+id/search_nothing_img"
+            android:text="请重新输入你想搜索的内容"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你可以尝试一下内容"
+        android:textColor="@color/text_gray"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <com.dwb.ruyou.tvhall.ui.widget.recyclerview1.TvRecyclerView
+        android:id="@+id/search_nothing_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.dwb.ruyou.tvhall.ui.widget.recyclerview1.TvRecyclerView>
+</LinearLayout>

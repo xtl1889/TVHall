@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dwb.ruyou.tvhall.ui.RecommendActivity"
+    android:orientation="vertical"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/game_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/game_Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/text_white"
+        app:tabSelectedTextColor="@color/font_blue"
+        android:visibility="gone"
+        />
+    <!--app:tabIndicatorColor="@color/selectStroke"-->
+    <!--app:tabBackground="@color/text_white"-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/game_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        />
+</LinearLayout>

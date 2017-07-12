@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.LiveShow_All_Fragment"
+    >
+    <com.dwb.ruyou.tvhall.ui.widget.recyclerview1.TvRecyclerView
+        android:id="@+id/liveshow_all_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nextFocusUp="@+id/game_title_all"
+        android:focusable="false"
+        android:descendantFocusability="afterDescendants"
+        />
+
+</FrameLayout>

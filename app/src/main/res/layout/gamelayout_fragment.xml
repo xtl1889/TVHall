@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/game_fragment_title_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            style="@style/two_grade_title_style"
+            android:nextFocusLeft="@+id/game_fragment_title_huoxian"
+            android:nextFocusRight="@+id/game_fragment_title_wangzhe"
+            android:nextFocusUp="@+id/game_title_tv"
+            />
+
+        <TextView
+            android:id="@+id/game_fragment_title_wangzhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王者荣耀"
+            style="@style/two_grade_title_style"
+            android:nextFocusLeft="@+id/game_fragment_title_all"
+            android:nextFocusRight="@+id/game_fragment_title_huoxian"
+            android:nextFocusUp="@+id/game_title_tv"
+            />
+
+        <TextView
+            android:id="@+id/game_fragment_title_huoxian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="穿越火线"
+            style="@style/two_grade_title_style"
+            android:nextFocusLeft="@+id/game_fragment_title_wangzhe"
+            android:nextFocusRight="@+id/game_fragment_title_all"
+            android:nextFocusUp="@+id/game_title_tv"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/game_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/game_fragment_Tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/text_white"
+        app:tabSelectedTextColor="@color/font_blue"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/game_fragment_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

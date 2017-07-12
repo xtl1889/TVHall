@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dwb.ruyou.tvhall.ui.GameDetailActivity"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/game_detail_down_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/game_detail_sure_selector"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:text="Tv版下载"
+            android:textColor="@color/text_white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/game_detail_down_shape"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/game_detail_down"
+                android:padding="5dp"
+                android:text="手机跨屏版"
+                android:textColor="@color/text_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方法"
+                    android:textColor="@color/text_white" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/game_detail_circle_shape"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/game_detail_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/game_detail_down"
+                android:padding="5dp"
+                android:text="下载信息将发送至您的手机"
+                android:textColor="@color/text_white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/game_detail_down"
+                    android:padding="10dp"
+                    android:text="手机号"
+                    android:textColor="@color/text_white" />
+
+                <EditText
+                    android:id="@+id/game_detail_phone_num_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/game_detail_phonenum_et_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/game_detail_sure_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/game_detail_sure_selector"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_horizontal"
+                android:text="确认"
+                android:textColor="@color/text_white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="方法"
+                    android:textColor="@color/text_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/game_detail_circle_shape"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/game_detail_down" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/game_detail_down"
+                android:padding="5dp"
+                android:text="扫码下载"
+                android:textColor="@color/text_white" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/test_two_mack" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="30dp"
+        >
+        <include layout="@layout/game_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游戏简介"
+                android:textColor="@color/text_white"
+                />
+            <TextView
+                android:id="@+id/game_detail_introduce_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/text_white"
+                android:text="@string/textview_no_string"
+                android:textSize="17sp"
+                android:layout_marginTop="6dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            >
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/game_detail_introduce_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                fresco:actualImageResource="@drawable/test_img2"
+                fresco:viewAspectRatio="1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                fresco:roundedCornerRadius="5dp"
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/game_detail_introduce_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                fresco:actualImageResource="@drawable/test_img2"
+                fresco:roundedCornerRadius="5dp"
+
+                fresco:viewAspectRatio="1"
+
+                />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/game_detail_introduce_img3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                fresco:actualImageResource="@drawable/test_img2"
+                fresco:viewAspectRatio="1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                fresco:roundedCornerRadius="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

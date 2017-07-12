@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.dwb.ruyou.tvhall.ui.SearchActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/search_keyboart_layout"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#25ffffff"
+        >
+
+        <com.dwb.ruyou.tvhall.ui.widget.SearchKeyBoart
+            android:id="@+id/searchKeyboart_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/inputText_tv"
+            android:layout_margin="30dp"
+             />
+
+        <TextView
+            android:id="@+id/inputText_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="请输入首字母"
+            android:textColor="@color/text_white"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@color/keyboart_text_into"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    tools:context="com.dwb.ruyou.tvhall.ui.fragment.PersonalCenter_Looked_Fragment">
+
+    <TextView
+        android:id="@+id/personal_manage_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  管理"
+        android:textSize="20sp"
+        android:textColor="@color/text_white"
+        android:layout_alignParentEnd="true"
+        android:drawableLeft="@drawable/manage"
+        android:background="@drawable/tab_tile_selector"
+        android:layout_margin="10dp"
+        android:layout_marginRight="30dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        />
+
+    <com.dwb.ruyou.tvhall.ui.widget.recyclerview1.TvRecyclerView
+        android:id="@+id/personalCenter_looked_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/personal_manage_tv"
+        android:focusable="false"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:nextFocusUp="@+id/personal_manage_tv"
+        />
+
+</RelativeLayout>

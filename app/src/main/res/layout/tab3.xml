@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    style="@style/tab_layout_style"
+    android:orientation="vertical"
+    android:nextFocusLeft="@+id/liveshow_linear"
+    android:nextFocusRight="@+id/classified_linear"
+    >
+
+    <TextView
+        android:id="@+id/tab3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="游戏"
+        style="@style/tab_title_style"
+        />
+    <ImageView
+        android:id="@+id/tab3_select_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/select_bottom"
+        android:visibility="invisible"
+        />
+</LinearLayout>
